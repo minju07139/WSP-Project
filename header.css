@@ -1,0 +1,137 @@
+*{
+    font-family: pretendard;
+    margin: 0px;
+}
+
+div.outerheader{
+width: 100%;
+}
+
+table.header{
+    -webkit-touch-callout: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    height: 79px;
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    min-width: 1280px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+table.header td.logo{
+    min-width: 198px;
+    width: 198px;
+    text-align: left;
+    font-weight: 900;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+table.header td.menu{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    min-width: 700px;
+}   
+
+table.header td.menu ul.menu{
+    text-align: left;
+    list-style: none;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+table.header td.menu ul.menu li{
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 80px;
+}
+
+table.header td.signin{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    min-width: 400px;
+    width: 400px;
+}
+
+table.header td.signin ul.signin{
+    float: right;
+    list-style: none;
+    color: #202020;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+table.header td.signin ul.signin li{
+    text-align: center;
+    display: inline;
+    padding: 0 30px;
+    line-height: 80px;
+}
+
+table.header td.signin ul.signin li:first-child{
+    padding-left:0;
+}
+
+table.header td.signin ul.signin li:last-child{
+    padding-right: 10px;
+}
+
+table.header ul.menu a.link:link{
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+table.header ul.menu a.link:visited{
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+table.header ul.menu a.link:hover{
+    color: #202020;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration: solid underline #202020 2px;
+}
+
+table.header ul.menu a.link:active{
+    color: #202020;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration: solid underline #202020 2px;
+}
+
+table.header td.logo a.main:link{
+    color:#202020;
+    text-decoration: none;
+}
+
+table.header td.logo a.main:visited{
+    color:#202020;
+    text-decoration: none;
+}
+
+table.header td.logo a.main:hover{
+    color:#202020;
+    text-decoration: none;
+}
+table.header td.logo a.main:active{
+    color:#202020;
+    text-decoration: none;
+}
+
+p.line{
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+    margin-bottom: 160px;
+}
