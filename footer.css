@@ -27,8 +27,8 @@ table.footer{
     color: #ffffff;
 }
 
-table.footer td{
-    width: 300px;
+table.footer td.main{
+    width: auto;
 }
 
 table.footer td.main p{
@@ -43,27 +43,32 @@ table.footer td.main p.main{
 
 table.footer td.main p.sub{
     color: #FBFAF8;
-    min-width: 98px;
-    width: 98px;
     text-align: left;
     font-weight: 500;
     font-size: 16px;
 }
 
+table.footer td.sub{
+    margin-right: 0;
+    text-align: right;
+    width: 225px;
+}
+
+table.footer td.sub p{
+    text-align: right;
+    padding-right: 0;
+}
+
 table.footer td.sub p.title{
     color: darkgray;
-    min-width: 98px;
-    width: 98px;
-    text-align: left;
+    text-align: right;
     font-weight: 500;
     font-size: 16px;
 }
 
 table.footer td.sub p.item{
     color: #FBFAF8;
-    min-width: 98px;    
-    width: 98px;
-    text-align: left;
+    text-align: right;
     font-weight: 300;
     font-size: 16px;
 }
