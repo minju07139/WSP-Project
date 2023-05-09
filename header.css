@@ -39,7 +39,7 @@ table.header{
 
             & li{ /* 개별 메뉴 */
                 display: inline; /* 메뉴 한 줄로 나열 */
-                padding: 0 30px; /* 좌우 패딩 30px */
+                padding: 0 40px; /* 좌우 패딩 30px */
                 line-height: 80px; /* 글씨 세로 가운데 정렬 */
 
                 & a.link{ /* 버튼 (비활성화) */
@@ -90,7 +90,7 @@ table.header{
     & td.signin{ /* 가입 관련 메뉴 */
         text-align: center; /* 텍스트 가운데 정렬 */
         margin: 0; padding: 0; /* 마진, 패딩 초기화 */
-        min-width: 400px; width: 400px; /* 메뉴 전체 너비 400px */
+        min-width: 200px; width: 200px; /* 메뉴 전체 너비 400px */
 
         & ul.signin{ /* 가입 관련 메뉴 리스트 */
             float: right; /* 리스트 헤더 오른쪽으로 몰기 */
