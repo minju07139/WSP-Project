@@ -7,10 +7,15 @@
     <title>join us</title>
     <link type="text/css" rel="stylesheet" href="loginstyle.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--스크립트 코드는 맨 밑에 스크립트 코드 애니메이션 작동가능하게 하는 기능임. 없으면 jquery 애니메이션 작동 안함.-->
-</head>
 
+</head>
 <body>
+    <!----------header---------->
+    <div w3-include-html="A Header.html"></div>
+    <!----------header----------> 
+
     <!----------login main------>
+    <div class="section">
     <section class="login-form">
         <h1>Moodi.</h1>
         <form acrion=""> <!--로그인 기능작동하려면 여기 채워야 함.-->
@@ -32,7 +37,12 @@
             <a href="">비밀번호를 잊어버리셨나요?</a>
         </div>
     </section>
+    </div>
     <!----------login main------------->
+
+    <!------------footer------------>
+    <div w3-include-html="A Footer.html"></div>
+    <!------------footer------------>
 
     <!---------java script------------->
     <script>
@@ -40,33 +50,69 @@
         let pw = $('#pw');
         let btn = $('#btn');
 
-        const input_id = document.getElementById("id");
-        const input_pw = document.getElementById("pw");
+        const input = document.getElementById("id");
 
-        input_id.addEventListener("keydown", function(event) {
-            if($(id).val() != "" && $(pw).val() == "") {
-                $(id).next('label').removeClass('warning');
+        input.addEventListener("keydown", function(event) {
+            if($(id).val() != "") {
+                $('label').removeClass('warning');
                 $(id).next('label').addClass('in');
-            }});
-
-        input_pw.addEventListener("keydown", function(event) {
-            if($(pw).val() != "") {
-                $(pw).next('label').removeClass('warning');
+            }
+            else if($(pw).val() != "") {
+                $('label').removeClass('warning');
                 $(pw).next('label').addClass('in');
-            }})
+            }
+            });
 
 
         $(btn).on('click', function() {
             if($(id).val() == "") {
-                $(id).next('label').removeClass('in');
+                $('label').removeClass('in');
                 $(id).next('label').addClass('warning');
             }
             else if($(pw).val() == ""){
-                $(pw).next('label').removeClass('in');
+                $('label').removeClass('in');
                 $(pw).next('label').addClass('warning');
             }
         });
+
     </script>
      <!---------java script------------->
+
+
+    <!------------header/footer html 연동------------>
+     <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+
+        <script>
+        includeHTML();
+        </script>
+    <!------------header/footer html 연동------------>
 </body>
 </html>
