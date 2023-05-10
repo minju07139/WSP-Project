@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join us</title>
+    <link type="text/css" rel="stylesheet" href="loginstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--스크립트 코드는 맨 밑에 스크립트 코드 애니메이션 작동가능하게 하는 기능임. 없으면 jquery 애니메이션 작동 안함.-->
+</head>
+
+<body>
+    <!----------login main------>
+    <section class="login-form">
+        <h1>Moodi.</h1>
+        <form acrion=""> <!--로그인 기능작동하려면 여기 채워야 함.-->
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">user name</label>
+                </input>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                    <label for="pw">password</label>
+                </input>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="submit">로그인</button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="">비밀번호를 잊어버리셨나요?</a>
+        </div>
+    </section>
+    <!----------login main------------->
+
+    <!---------java script------------->
+    <script>
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+
+        const input_id = document.getElementById("id");
+        const input_pw = document.getElementById("pw");
+
+        input_id.addEventListener("keydown", function(event) {
+            if($(id).val() != "" && $(pw).val() == "") {
+                $(id).next('label').removeClass('warning');
+                $(id).next('label').addClass('in');
+            }});
+
+        input_pw.addEventListener("keydown", function(event) {
+            if($(pw).val() != "") {
+                $(pw).next('label').removeClass('warning');
+                $(pw).next('label').addClass('in');
+            }})
+
+
+        $(btn).on('click', function() {
+            if($(id).val() == "") {
+                $(id).next('label').removeClass('in');
+                $(id).next('label').addClass('warning');
+            }
+            else if($(pw).val() == ""){
+                $(pw).next('label').removeClass('in');
+                $(pw).next('label').addClass('warning');
+            }
+        });
+    </script>
+     <!---------java script------------->
+</body>
+</html>
