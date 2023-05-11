@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="header.css">
+    <link type="text/css" rel="stylesheet" href="page.css">
+    <link type="text/css" rel="stylesheet" href="footer.css">
+    <title>Moodi.</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <!----------header---------->  
+    <div class="outerheader">
+        <table class="header">
+            <tr>
+                <td class="logo"><a class="main" href="main.html">Moodi.</a></td>
+                <td class="menu">
+                    <ul class="menu">
+                        <li><a class="active" href="about.html">about</a></li>
+                        <li><a class="link" href="recommend.html">recommend</a></li>
+                        <li><a class="link" href="mood.html">mood</a></li>
+                        <li><a class="link" href="share.html">share</a></li>
+                        <li><a class="link" href="support.html">support</a></li>
+                    </ul>
+                </td>
+                <td class="signin">
+                   <ul class="signin">
+                        <li class="click">sign in</li>              
+                        <li class="click">join us</li>
+                        <li class="click">help</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p class="line"> </p>
+    <p class="void"> </p>
+    <!----------header----------> 
+
+
+    <!-----------main----------->
+    
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        div.scrolldownvoid{
+            height: 900px;
+        }
+        h4{
+            text-align: center;
+            &.scrolldown{
+                animation-name: updown;
+                animation-duration: 1s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            & a.scrollingbutton{
+                text-align: center; font-weight: 300; color: lightgray; font-size: 16px; text-decoration: none;
+            }
+        }
+        
+        @keyframes updown{
+            from{ margin-top: 0px; }
+            20%{ margin-top: 0px; }
+            75%{ margin-top:  5px; }
+            to{ margin-top: 10px; }
+        }
+
+
+        
+        
+
+    </style>
+    
+    <p class="void"> </p>
+    <div class="main">
+        <h2>about Moodi.</h2>
+        <h3>How Moodi was born?</h3>
+        
+        <div class="scrolldownvoid">
+            <p class="void"> </p>
+            <p class="void"> </p>
+            <h4 class="scrolldown"><a class="scrollingbutton" href="#t1"> click to scroll down</a></h4>
+            <h4 class="scrolldown">▼</h4>
+        </div>
+
+        <div class="sub">
+            <table class="tb1" id="t1">
+                <tr><td><p class="void"> </p><img class= "img1" src = "housetest.png"  alt = "image"></td></tr>
+                <tr><td><p class="tnumber1">01.</p></td></tr>
+                <tr><td><p class="context1">With the outbreak of COVID-19, people<br>have become more interested in interior<br>design in proportion to the frequent<br>living in residential spaces.</p></td></tr>
+                <tr><td><p class="subcontext1"><br>코로나19가 유행하며 사람들은 주거공간에서 생활하는 일이 잦아졌고,<br>이에 비례하여 인테리어에 많은 관심을 갖게되었습니다. </p></td></tr>
+            </table>
+        </div>
+        
+        <div class="scrolldownvoid">
+            <p class="void" style="height: 64px;"> </p>
+            <h4 class="scrolldown"><a class="scrollingbutton" href="#t2">click to scroll down</a></h4>
+            <h4 class="scrolldown">▼</h4>
+        </div>
+        
+        <div class="sub">
+            <table class="tb2" id="t2">
+                <tr><td><p class="void" style="height: 280px;"> </p><p class="tnumber2">02.</p></td></tr>
+                <tr>
+                    <td><p class="context2">As a result, apps like today's house<br>became popular, and it was also<br>popular for people to do their own<br>home interior and share it with others. </p></td>
+                    <td rowspan="2"><img class="img2" src = "tabletest.png" alt = "image" ></td>
+                </tr>
+                <tr>
+                    <td><p class="subcontext2"><br>이에 따라 오늘의 집과 같은 앱이 유행하며 사람들은 본인의 집인테리어를<br>하고, 이를 다른 사람들에게 공유하는 것이 유행이기도 하였습니다.</p></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="scrolldownvoid">
+            <p class="void"> </p>
+            <p class="void" style="height: 70px;"> </p>
+            <h4 class="scrolldown"><a class="scrollingbutton" href="#t3"> click to scroll down</a></h4>
+            <h4 class="scrolldown">▼</h4>
+        </div>
+        
+        <div class="sub">
+            <table class="tb3" id="t3">
+                <td> </td>
+                <tr><td></td><td><p class="void" style="height: 220px;"> </p><p class="tnumber3">03.</p></td></tr>
+                <tr>
+                    <td rowspan="2"><img class="img3" src = "Lamptest.png" alt = "image" ></td>
+                    <td><p class="context3">However,<br>
+even if we found an image of the mood<br>we wanted, sites with links to selling<br>interior furniture products within that<br>image were not common.</p></td>
+                </tr>
+                <tr>
+                    <td><p class="subcontext3"><br> 하지만 본인이 원하는 무드의 이미지를 발견하더라도 해당 이미지 내 인테리어<br>가구 제품을 판매하는 링크를 첨부한 사이트는 흔하지 않았습니다. </p></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="scrolldownvoid">
+            <p class="void"> </p>
+            <p class="void" style="height: 82px;"> </p>
+            <h4 class="scrolldown"><a class="scrollingbutton" href="#t4"> click to scroll down</a></h4>
+            <h4 class="scrolldown">▼</h4>
+        </div>
+        
+        <div class="sub">
+            <table class="tb4" id="t4">
+                <tr>
+                    <td><p class="void" style="height: 220px;"></p></td>
+                    <td rowspan="4"><img class="img4" src = "hyperlinktest.jpg" alt = "image" style="margin-top: 160px;"></td>
+                </tr>
+                <tr>
+                    <td><p class="tnumber4">04.</p></td>
+                </tr>
+                <tr>
+                    <td><p class="context4">Therefore, after selecting the interior<br>mood for each consumer's taste, we<br>would like to not only attach the images<br>accordingly, but also insert the furniture<br>sales site in the image as a (hyperlink).</p></td>
+                    
+                </tr>
+                <tr>
+                    <td><p class="subcontext4"><br>이에 소비자들의 취향별 인테리어 무드테마를 선정 후, 그에 맞는 이미지들을 첨부할 뿐만<br>아니라 해당 이미지 내 가구 판매사이트를 하이퍼링크로 삽입하고자합니다. </p></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="scrolldownvoid">
+            <p class="void" style="height: 200px;"> </p>
+            <h4 class="scrolldown"><a class="scrollingbutton" href="#t5"> click to scroll down</a></h4>
+            <h4 class="scrolldown">▼</h4>
+        </div>
+        
+        <div class="sub">
+            <table class="tb5" id="t5">
+                <tr><td><p class="void" style="height: 10px;"> </p><p class="tnumber5"><br><br>05.</p></td></tr>
+                <tr><td><img class= "img5" src = "chairtest.png"  alt = "image"></td></tr>
+                <tr><td><p class="context5"><a class="highlight">This is how Moodi</a>, a website that increases<br>access to interior design and provides<br>shopping convenience, <a class="highlight">was born</a>.</p></td></tr>
+                <tr><td><p class="subcontext5"><br>이렇게 인테리어에 대한 접근성을 높이고 쇼핑의 편의성을 제공하는<br>웹사이트, Moodi가 탄생했습니다.</p></td></tr>
+            </table>
+        </div>
+        
+        <div class="scrolldownvoid">
+            <p class="void" style="height: 121px;"> </p>
+            <h4>▲</h4>
+            <h4><a class="scrollingbutton" href="#"> click to scroll up</a></h4>
+        </div>
+        
+
+        
+    </div>
+    
+    <p class="void"> </p>
+    <p class="void"> </p>
+    <p class="void"> </p>
+    
+    <script>
+        let x = 0;
+        
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((box)=>{
+                if(box.isIntersecting){
+                    box.target.style.opacity = 1;
+                    observer.unobserve(box.target);
+                }
+                else{
+                    box.target.style.opacity = 0;
+                }
+            })
+        })
+
+        let div = document.querySelectorAll("div.sub table")
+        observer.observe(div[0])
+        observer.observe(div[1])
+        observer.observe(div[2])
+        observer.observe(div[3])
+        observer.observe(div[4])
+    </script>
+    <!-----------main----------->
+
+    
+    <!----------footer---------->
+    <p class="void"> </p>
+    <div class="outerfooter">
+        <table class="footer">
+           <tr>
+                <td class="main">
+                    <p class="main">Moodi.</p>
+                    <p class="sub">mood your interior.</p>
+                    <p> </p>
+                </td>
+                <td class="sub">
+                    <p class="title">Get in touch</p>
+                    <p class="item">moodi@gmail.com</p><br>
+                </td>
+                <td class="sub">
+                    <p class="title">Connect</p>
+                    <p class="item">LinkedIn</p>
+                    <p class="item">Instagram</p>
+                </td>
+                <td class="sub">
+                    <p class="title">Year founded</p>
+                    <p class="item">2023</p><br>
+                    <p> </p>
+                </td>
+                <td class="sub">
+                    <p class="title">Location</p>
+                    <p class="item">Seoul, Korea</p><br>
+                    <p> </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!----------footer---------->
+<body>
