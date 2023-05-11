@@ -50,31 +50,32 @@
         let pw = $('#pw');
         let btn = $('#btn');
 
-        const input = document.getElementById("id");
+        const input_id = document.getElementById("id");
+        const input_pw = document.getElementById("pw");
 
-        input.addEventListener("keydown", function(event) {
-            if($(id).val() != "") {
-                $('label').removeClass('warning');
+        input_id.addEventListener("keydown", function(event) {
+            if($(id).val() != "" && $(pw).val() == "") {
+                $(id).next('label').removeClass('warning');
                 $(id).next('label').addClass('in');
-            }
-            else if($(pw).val() != "") {
-                $('label').removeClass('warning');
+            }});
+
+        input_pw.addEventListener("keydown", function(event) {
+            if($(pw).val() != "") {
+                $(pw).next('label').removeClass('warning');
                 $(pw).next('label').addClass('in');
-            }
-            });
+            }})
 
 
         $(btn).on('click', function() {
             if($(id).val() == "") {
-                $('label').removeClass('in');
+                $(id).next('label').removeClass('in');
                 $(id).next('label').addClass('warning');
             }
             else if($(pw).val() == ""){
-                $('label').removeClass('in');
+                $(pw).next('label').removeClass('in');
                 $(pw).next('label').addClass('warning');
             }
         });
-
     </script>
      <!---------java script------------->
 
