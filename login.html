@@ -30,12 +30,9 @@
                 </input>
             </div>
             <div class="btn-area">
-                <button id="btn" type="submit">로그인</button>
+                <button id="btn" type="button">로그인</button>
             </div>
         </form>
-        <div class="caption">
-            <a href="">비밀번호를 잊어버리셨나요?</a>
-        </div>
     </section>
     </div>
     <!----------login main------------->
@@ -46,6 +43,7 @@
 
     <!---------java script------------->
     <script>
+
         let id = $('#id');
         let pw = $('#pw');
         let btn = $('#btn');
@@ -54,7 +52,7 @@
         const input_pw = document.getElementById("pw");
 
         input_id.addEventListener("keydown", function(event) {
-            if($(id).val() != "" && $(pw).val() == "") {
+            if($(id).val() != "") {
                 $(id).next('label').removeClass('warning');
                 $(id).next('label').addClass('in');
             }});
@@ -74,6 +72,9 @@
             else if($(pw).val() == ""){
                 $(pw).next('label').removeClass('in');
                 $(pw).next('label').addClass('warning');
+            }
+            else {
+                location.href = "main.html";
             }
         });
     </script>
