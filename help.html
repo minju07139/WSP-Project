@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link type="text/css" rel="stylesheet" href="helpstyle.css">
+  
+</head>
+<body>
+    <!--header-->
+    <div w3-include-html="A Header.html"></div>
+    <!--header-->
+
+    <!--help page-->
+    <section class="section">
+      <ul>
+        <li><div class="map_image">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.931385622769!2d127.04416597662193!3d37.556680324692046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4a43f555b8f%3A0xba52541246a6b147!2z7ISc7Jq47Yq567OE7IucIOyCrOq3vOuPmSDtlZzslpHrjIDtlZnqtZAg7IOd7Zmc6rO87ZWZ6rSA!5e0!3m2!1sko!2skr!4v1683792595174!5m2!1sko!2skr" width="1000" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div></li>
+        <li><div class="map_text">
+        <p><img src="locationmark.png" width="12" height="12"> 주소: 서울특별시 성동구 왕십리로 222 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="phone.png" width="12" height="12"> 전화: 02-2220-1170</p>
+        </div></li>
+      </ul>
+    </section>
+    <!--help page-->
+
+
+
+
+
+    <!--footer-->
+    <div w3-include-html="A Footer.html"></div>
+    <!--footer-->
+
+
+    <!------------header/footer html 연동------------>
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+
+        <script>
+        includeHTML();
+        </script>
+    <!------------header/footer html 연동------------>
+</body>
+</html>
