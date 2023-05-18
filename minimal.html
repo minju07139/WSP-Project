@@ -33,229 +33,80 @@
         </table>
     </div>
     <p class="line"> </p>
-    <p class="void"> </p>
     <!----------header----------> 
 
     
     <!-----------main----------->
     <style>
-        button{ outline: none; border: none; background: none;}
-        p.arrow{
-            text-align: center;
-            & button{
-                margin: 0 10px;
-                color: darkgray;
-                appearance: none;
-            }
-            & button:hover{
-                color: black;
+        
+        .s1 p img{
+            border-radius: 100px;
+            margin-top: 100px;
+        }
+
+        
+        /*가구 메뉴*/
+        .s2{
+            width: 1080px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            & article{
+                & .title{ margin-top: 10px; margin-bottom: 10px; font-size: 16px; text-align: left; font-weight: 700; }
+                & .context{ margin-bottom: 20px; text-align: left; color: darkgray; font-weight: 500; }
+                }
+                & img{
+                    width: 330px;
+                    max-height: 330px;
+                    object-fit: cover;
+                }
             }
         }
+        
     </style>
     
-    <div class="main" style="margin-top: 0px;">
-        <h2 style="font-size: 32px;">공간별 인테리어</h2>
-        <h3 style="margin-bottom: 50px;">Home Styling</h3>
-        <ul class="menu">
-            <li class="amenu"><a href="minimal.html" aria-activedescendant=""style="color: black;">미니멀</a></li>
-            <li class="line">|</li>
-            <li class="amenu"><a href="individuality.html">개성</a></li>
-            <li class="line">|</li>
-            <li class="amenu"><a href="industrial.html">인더스트리얼</a></li>
-            <li class="line">|</li>
-            <li class="amenu"><a href="northeurope.html">북유럽</a></li>
-            <li class="line">|</li>
-            <li class="amenu"><a href="planterior.html">플렌테리어</a></li>
-        </ul>
+    <main>
         
-        <div>
-            <p style="margin: 50px 0;"><img src="Artek.png"></p>
-        </div>
+        <section class="s1">
+            <p style="margin: 0 0 100px 0;"><img src="Artek.png"></p>
+        </section>
         
-        <div class="item">
-            <table class="outer">
-                <tr>
-                    <td style="width: 1080px;">
-                        <table class="item">
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">1</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    
-                    <td style="width: 500px;"></td>
-                    
-                    <td style="width: 1080px;">
-                        <table class="item">
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">2</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    
-                    <td style="width: 500px;"></td>
-                    
-                    <td style="width: 1080px;">
-                        <table class="item">
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">3</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                                <td style="width: 20px;"></td>
-                                <td>
-                                    <img src="testphoto.jpg" width="300" height="200">
-                                    <h2 style="font-size: 16px; line-height: 20px; text-align: left; margin-left: 30px;">test</h2>
-                                    <h4 style="margin-bottom: 20px; text-align: left; margin-left: 30px;">testcontext</h4>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <section class="s2">
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            <article>
+                <img src="testphoto.jpg">
+                <p class="title">1</p>
+                <p class="context">testcontext</p>
+            </article>
+            
+        </section>
         
-        <p class="arrow">
-            <button class="left"><a class="nonactive">◀</a></button>
-            <button class="first"><a class="active">1</a></button>
-            <button class="second"><a class="nonactive">2</a></button>
-            <button class="third"><a class="nonactive">3</a></button>
-            <button class="right"><a class="nonactive">▶</a></button>
-        </p>
-        
-    </div>
-    
-    <script>
-        let x = 0;
-        
-        document.querySelector(".left").addEventListener('click', function(){
-            if(x!=0){
-                x=x+1572;
-                document.querySelector(".outer").style.transform = `translate(${x}px)`;
-            }
-        })
-        
-        document.querySelector(".first").addEventListener('click', function(){
-            x=0;
-            document.querySelector(".outer").style.transform = `translate(${x}px)`;
-        })
-        
-        document.querySelector(".second").addEventListener('click', function(){
-            x=-1572;
-            document.querySelector(".outer").style.transform = `translate(${x}px)`;
-        })
-        
-        document.querySelector(".third").addEventListener('click', function(){
-            x=-3144;
-            document.querySelector(".outer").style.transform = `translate(${x}px)`;
-        })
-        
-        document.querySelector(".right").addEventListener('click', function(){
-            if(x!=-3144){
-                x=x-1572;
-                document.querySelector(".outer").style.transform = `translate(${x}px)`;
-            }
-        })
-    </script>
+    </main>
     <!-----------main----------->
 
 
