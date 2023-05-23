@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="header.css">
     <link type="text/css" rel="stylesheet" href="page.css">
     <link type="text/css" rel="stylesheet" href="footer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodi.</title>
 </head>
 
@@ -17,15 +19,12 @@
                 <td class="menu">
                     <ul class="menu">
                         <li><a class="link" href="about.html">about</a></li>
-                        <li><a class="link" href="recommend.html">recommend</a></li>
-                        <li><a class="link" href="mood.html">mood</a></li>
-                        <li><a class="link" href="share.html">share</a></li>
+                        <li><a class="link" href="mood.html">mood</a></li>   
                         <li><a class="link" href="support.html">support</a></li>
                     </ul>
                 </td>
                 <td class="signin">
                    <ul class="signin">
-                        <li class="click">sign in</li>
                         <li class="click">join us</li>
                         <li class="click">help</li>
                     </ul>
@@ -34,21 +33,193 @@
         </table>
     </div>
     <p class="line"> </p>
-    <p class="void"> </p>
     <!----------header----------> 
 
 
     <!-----------main----------->
-    <div class="main">
-        <h2>Moodi.</h2>
-        <h3>Mood your Interior</h3>
-        <p class="img"><img class="main" src="testphoto.jpg"></p>
-    </div>
+    <style>
+        .s1{
+            margin-top: 100px;
+            display: flex;
+            overflow: visible;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            & .main{
+                font-weight: 700;
+                font-size: 80px;
+                overflow: visible;
+            }
+            & .sub{
+                font-weight: 300;
+                font-size: 20px;
+                color: darkgray;
+                overflow: visible;
+            }
+        }
+        
+        .s2{
+            transform: translateY(-100px);
+            width: 1080px;
+            height: 970px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            overflow: hidden;
+            flex-wrap: nowrap;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .furniturecontainer{
+            z-index: 2;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            animation: rotating_container 4s linear infinite;
+            transform-origin: 50% 800px;
+            & img{
+                z-index: 1;
+                animation: rotating_furniture 4s linear infinite;
+            }
+            & p{
+                z-index: 0;
+                overflow: hidden;
+                font-weight: 700;
+                font-size: 120px;
+                color: lightgray;
+                text-align: center;
+                animation: rotating_text 4s linear infinite;
+            }
+        }
+        
+        @keyframes rotating_container{
+            100%{ transform: rotate(35deg); animation-timing-function: ease-out; opacity: 0%; }
+            
+            97%{ opacity: 0%; }
+            
+            88%{ transform: rotate(1deg); opacity: 100%; }
+            
+            10%{ transform: rotate(-1deg); opacity: 100%; animation-timing-function: ease-out; }
+            
+            5%{opacity: 0%;}
+
+            0%{ transform: rotate(-35deg); opacity: 0%; }
+        }
+        
+        @keyframes rotating_text{
+            100%{ transform: translateY(-100px) rotate(-35deg); animation-timing-function: ease-out; }
+            
+            88%{ transform: translateY(-100px) rotate(-1deg); }
+            
+            10%{ transform: translateY(-100px) rotate(1deg); animation-timing-function: ease-out; }
+            
+            0%{ transform: translateY(-100px) rotate(35deg); }
+        }
+        
+        @keyframes rotating_furniture{
+            100%{ transform: translateY(100px) rotate(50deg); animation-timing-function: ease-out; }
+            88%{ transform: translateY(100px) rotate(10deg); }
+            10% { transform: translateY(100px) rotate(-10deg); animation-timing-function: ease-out; }
+            0% { transform: translateY(100px) rotate(-30deg); }
+        }
+        
+        .circlecontainer{
+            z-index: 0;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(1px);
+            & .mini{
+                z-index: 1;
+                width: 16px;
+                height: 16px;
+                background-color: black;
+                border-radius: 50%;
+                animation: rotating_point 4s linear infinite;
+                transform-origin: 50% 460px;
+            }
+            & .large{
+                z-index: 0;
+                width: 900px;
+                height: 450px;
+                border: 1px solid transparent;
+                border-top-left-radius: 450px;
+                border-top-right-radius: 450px;
+                background-image: linear-gradient(#FBFAF8, #FBFAF8), linear-gradient(to top, transparent 50% , black 100%);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+            }
+        }
+        
+        @keyframes rotating_point{
+            100%{ transform: translateY(9px) rotate(70deg); animation-timing-function: ease-out; opacity: 0% }
+            97%{ opacity: 0% }
+            88%{ transform: translateY(9px) rotate(3deg); opacity: 100% }
+            10% { transform: translateY(9px) rotate(-3deg); animation-timing-function: ease-out; opacity: 100% }
+            5%{ opacity: 0% }
+            0% { transform: translateY(9px) rotate(-70deg); opacity: 0% }
+        }
+    </style>
+    
+    <main>
+        <section class="s1">
+            <div class="main">Mood</div>
+            <div class="sub"><i>당신의 무드를</i></div>
+            <div class="main">your</div>
+            <div class="sub"><i>디자인하다.</i></div>
+            <div class="main">interior.</div>
+        </section>
+        
+        <section class="s2">
+            <article class="circlecontainer">
+                <div class="mini"> </div>
+                <div class="large"> </div>
+            </article>
+            <article class="furniturecontainer">
+                <p>Minimal.</p>
+                <img src="furniture/minimal1.png">
+            </article>
+        </section>
+    </main>
+    
+    <script>
+        let x = 0;
+        setInterval(function(){
+            if(x==0){
+                document.querySelector(".s2 .furniturecontainer img").src='furniture/scandi1.png';
+                document.querySelector(".s2 .furniturecontainer p").innerText="Scandinavian.";
+                    x = x+1;
+            }
+            else if(x==1){
+                document.querySelector(".s2 .furniturecontainer img").src='furniture/indust1.png';
+                document.querySelector(".s2 .furniturecontainer p").innerText="Industrial.";
+                x = x+1; 
+            }
+            else if(x==2){
+                document.querySelector(".s2 .furniturecontainer img").src='furniture/natural1.png';
+                document.querySelector(".s2 .furniturecontainer p").innerText="Natural.";
+                    x = x+1; 
+            }
+            else if(x==3){
+                document.querySelector(".s2 .furniturecontainer img").src='furniture/unique1.png';
+                document.querySelector(".s2 .furniturecontainer p").innerText="Unique.";
+                x = x+1; 
+            }
+            else{
+                document.querySelector(".s2 .furniturecontainer img").src='furniture/minimal1.png';
+                document.querySelector(".s2 .furniturecontainer p").innerText="Minimal.";
+                x = 0;
+            }
+        }, 4000);
+    </script>
     <!-----------main----------->
 
 
     <!----------footer---------->
-    <p class="void"> </p>
     <div class="outerfooter">
         <table class="footer">
            <tr>
