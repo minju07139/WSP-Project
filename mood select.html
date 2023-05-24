@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mood select</title>
+    <link type="text/css" rel="stylesheet" href="mood select.css">
+    <link type="text/css" rel="stylesheet" href="page.css">
+</head>
+<body>
+    <!--header-->
+    <div w3-include-html="A Header.html"></div>
+    <!--header-->
+
+    <!--main-->
+    <main>
+        <table class="tb"> 
+            <tr>
+                <td><a href="minimal.html"><P>Minimal</P><img src="minimal button.png" width="161" height="195"></a></td>
+                <td><a href="unique.html"><P>Unique.</P><img src="unique button.png" width="117" height="200"></a></td>
+            </tr>
+            <tr>
+                <td class="mood button" style="border: none;"><img src="mood button.png" style="margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 60px; display: block;"><!--mood--></td>
+                <td><a href="scandinavian.html"><p>Scandinavian.</p><img src="scandinavian button.png" width="230" height="207"></a></td>
+            </tr>
+            <tr>
+                <td><a href="industrial.html"><p>Industrial.</p><img src="industrial button.png" width="160" height="138"></a></td>
+                <td><a href="natural.html"><p>Natural.</p><img src="natural button.png" width="240" height="172"></a></td>
+            </tr>
+        </table>
+    </main>
+    <!--main-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <div w3-include-html="A Footer.html"></div>
+    <!--footer-->
+
+
+    <!------------header/footer html 연동------------>
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+
+        <script>
+        includeHTML();
+        </script>
+    <!------------header/footer html 연동------------>
+</body>
+</html>
