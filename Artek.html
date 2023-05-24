@@ -64,11 +64,14 @@
                 & .title{ margin-top: 10px; margin-bottom: 10px; font-size: 16px; text-align: left; font-weight: 700; }
                 & .context{ margin-bottom: 40px; text-align: left; color: darkgray; font-weight: 400; }
             }
-            & img{
-                display: block;
+            & p.img{
                 width: 330px;
-                max-height: 330px;
-                object-fit: cover;
+                height: 330px;
+                overflow: hidden;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                & .img1, .img2{ transform: translateY(-50px); }
+                & .img3{ transform: translateY(50px); }
             }
         }
         
@@ -85,37 +88,37 @@
         <section class="s2">
             <article>
                 <a href="https://leweekend.co.kr/goods/goods_view.php?goodsNo=87111">
-                <img class="img1" src="Artek1.png"></a>
+                <p class="img"><img class="img1" src="Artek1.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://www.finnishdesignshop.com/en-us/product/aalto-day-bed-710">
-                <img class="img2" src="Artek2.png"></a>
+                <p class="img"><img class="img2" src="Artek2.png"></p></a>
                 <p class="title">2</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://leweekend.co.kr/goods/goods_view.php?goodsNo=65326">
-                <img class="img3" src="Artek3.png"></a>
+                <p class="img"><img class="img3" src="Artek3.png"></p></a>
                 <p class="title">3</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://leweekend.co.kr/goods/goods_view.php?goodsNo=65308">
-                <img class="img4" src="Artek4.png"></a>
+                <p class="img"><img class="img4" src="Artek4.png"></p></a>
                 <p class="title">4</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://leweekend.co.kr/goods/goods_view.php?goodsNo=65260">
-                <img class="img5" src="Artek5.png"></a>
+                <p class="img"><img class="img5" src="Artek5.png"></p></a>
                 <p class="title">5</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://leweekend.co.kr/goods/goods_view.php?goodsNo=87010&ttm_media_type=google&ttm_product=660585&gad=1&gclid=CjwKCAjw3ueiBhBmEiwA4BhspGmWuZX01g9OvsEtn-bRwECPSVjQe7dghm9TQroghaa5_u6WoK2p4BoCBUwQAvD_BwE">
-                <img class="img6" src="Artek6.png"></a>
+                <p class="img"><img class="img6" src="Artek6.png"></p></a>
                 <p class="title">6</p>
                 <p class="context">testcontext</p>
             </article>

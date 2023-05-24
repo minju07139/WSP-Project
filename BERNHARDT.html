@@ -65,10 +65,18 @@
                 & .title{ margin-top: 10px; margin-bottom: 10px; font-size: 16px; text-align: left; font-weight: 700; }
                 & .context{ margin-bottom: 40px; text-align: left; color: darkgray; font-weight: 400; }
             }
-            & img{
+            & .img{
                 width: 330px;
-                max-height: 330px;
-                object-fit: cover;
+                height: 330px;
+                overflow: hidden;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                & .img1{ transform: scale(0.8); }
+                & .img2{ transform: translate(50px, 50px); }
+                & .img3{ transform: translate(-160px, -60px); }
+                & .img4{ transform: translate(20px, 70px); }
+                & .img5{ transform: translate(20px, 100px); }
+                & .img6{ transform: translate(40px, 100px); }
             }
         }
         
@@ -85,37 +93,37 @@
         <section class="s2">
             <article>
                 <a href="https://bernhardtdesign.com/furniture/avant/">
-                <img src="bernhardt1.png"></a>
+                <p class="img"><img class="img1" src="bernhardt1.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://bernhardtdesign.com/furniture/becca-sofa/">
-                <img src="bernhardt2.png"></a>
+                <p class="img"><img class="img2" src="bernhardt2.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://bernhardtdesign.com/furniture/alta/">
-                <img src="bernhardt3.png"></a>
+                <p class="img"><img class="img3" src="bernhardt3.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://bernhardtdesign.com/furniture/catia/">
-                <img src="bernhardt4.png"></a>
+                <p class="img"><img class="img4" src="bernhardt4.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://bernhardtdesign.com/furniture/cp-1-2/?r-index=ottomans">
-                <img src="bernhardt5.png"></a>
+                <p class="img"><img class="img5" src="bernhardt5.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://bernhardtdesign.com/furniture/cp-3/">
-                <img src="bernhardt6.png"></a>
+                <p class="img"><img class="img6" src="bernhardt6.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>

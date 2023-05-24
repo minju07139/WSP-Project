@@ -65,10 +65,18 @@
                 & .title{ margin-top: 10px; margin-bottom: 10px; font-size: 16px; text-align: left; font-weight: 700; }
                 & .context{ margin-bottom: 40px; text-align: left; color: darkgray; font-weight: 400; }
             }
-            & img{
+            & .img{
                 width: 330px;
-                max-height: 330px;
-                object-fit: cover;
+                height: 330px;
+                overflow: hidden;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                & .img1{ transform: translate(100px, 60px);}
+                & .img2{ transform: translate(40px, 40px); }
+                & .img3{ transform: translate(60px, 60px); }
+                & .img4{ transform: translate(-100px, -40px); }
+                & .img5{ transform: translate(0px, -260px); }
+                & .img6{ transform: translate(20px, -160px); }
             }
         }
         
@@ -85,37 +93,37 @@
         <section class="s2">
             <article>
                 <a href="https://www.monologuelondon.com/products/ruban-chair">
-                <img src="EP1.png"></a>
+                <p class="img"><img class="img1" src="EP1.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://www.estudiopersona.com/products/o-stool">
-                <img src="EP2.png"></a>
+                <p class="img"><img class="img2" src="EP2.png"></p></a>
                 <p class="title">2</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://mattermatters.com/products/una-chair">
-                <img src="EP3.png"></a>
+                <p class="img"><img class="img3" src="EP3.png"></p></a>
                 <p class="title">3</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://www.estudiopersona.com/products/bow-floor-lamp">
-                <img src="EP4.png"></a>
+                <p class="img"><img class="img4" src="EP4.png"></p></a>
                 <p class="title">4</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://rosecrosby.com/products/bow-pendant-lamp?variant=41786309214388">
-                <img src="EP5.png"></a>
+                <p class="img"><img class="img5" src="EP5.png"></p></a>
                 <p class="title">5</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href="https://www.estudiopersona.com/instock/luzdiningtable-cbx37">
-                <img src="EP6.png"></a>
+                <p class="img"><img class="img6" src="EP6.png"></p></a>
                 <p class="title">6</p>
                 <p class="context">testcontext</p>
             </article>

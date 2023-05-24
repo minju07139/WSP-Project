@@ -65,10 +65,18 @@
                 & .title{ margin-top: 10px; margin-bottom: 10px; font-size: 16px; text-align: left; font-weight: 700; }
                 & .context{ margin-bottom: 40px; text-align: left; color: darkgray; font-weight: 400; }
             }
-            & img{
+            & .img{
                 width: 330px;
                 max-height: 330px;
-                object-fit: cover;
+                overflow: hidden;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+                & .img1{ transform: scale(0.9) translate(40px, 20px);}
+                & .img2{ transform: translate(40px, -40px); }
+                & .img3{ transform: translate(20px, 40px); }
+                & .img4{ transform: translate(-52px, -220px); }
+                & .img5{ transform: scale(0.8) translate(-210px, -300px); }
+                & .img6{ transform: scale(0.8) translate(-90px, -240px); }
             }
         }
         
@@ -85,37 +93,37 @@
         <section class="s2">
             <article>
                 <a href = "https://www.danishdesignstore.com/products/jacobsen-egg-chair-fritz-hansen-egg-leather-featured">
-                <img src="fritzhansen1.png"></a>
+                <p class="img"><img class="img1" src="fritzhansen1.png"></p></a>
                 <p class="title">1</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href = "https://www.fritzhansen.com/ko/categories/by-series/Fri/JH14MU?sku=JH14MU-ATO124-ATO124-SPAL">
-                <img src="fritzhansen2.png"></a>
+                <p class="img"><img class="img2" src="fritzhansen2.png"></p></a>
                 <p class="title">2</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href = "https://www.fritzhansen.com/ko/categories/by-series/PK0A/PK0A?sku=PK0A-CA195">
-                <img src="fritzhansen3.png"></a>
+                <p class="img"><img class="img3" src="fritzhansen3.png"></p></a>
                 <p class="title">3</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href = "https://www.fritzhansen.com/ko/categories/by-series/KAISER%20idell/6631-P?sku=64700608">
-                <img src="fritzhansen4.png"></a>
+                <p class="img"><img class="img4" src="fritzhansen4.png"></p></a>
                 <p class="title">4</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href = "https://www.fritzhansen.com/ko/categories/by-series/Night%20Owl/Night%20Owl?sku=52698003">
-                <img src="fritzhansen5.png"></a>
+                <p class="img"><img class="img5" src="fritzhansen5.png"></p></a>
                 <p class="title">5</p>
                 <p class="context">testcontext</p>
             </article>
             <article>
                 <a href = "https://www.fritzhansen.com/ko/categories/by-series/Calabash/Calabash%20P2?sku=84720608">
-                <img src="fritzhansen6.png"></a>
+                <p class="img"><img class="img6" src="fritzhansen6.png"></p></a>
                 <p class="title">6</p>
                 <p class="context">testcontext</p>
             </article>
